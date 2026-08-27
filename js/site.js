@@ -56,6 +56,7 @@ const ICO = {
   calendario: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 11h18"/></svg>',
   instagram: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.4" cy="6.6" r="1.1" fill="currentColor" stroke="none"/></svg>',
   email: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="m3 7 9 6 9-6"/></svg>',
+  whatsapp: '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm0 1.67c2.2 0 4.27.86 5.83 2.42a8.2 8.2 0 0 1 2.41 5.82c0 4.54-3.7 8.24-8.25 8.24a8.23 8.23 0 0 1-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.19 8.19 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.26-8.24zm-2.6 4.1c-.2 0-.5.07-.77.36-.26.29-1 .98-1 2.39s1.03 2.77 1.17 2.96c.14.2 2 3.05 4.85 4.27.68.29 1.2.46 1.61.6.68.21 1.3.18 1.79.11.54-.08 1.68-.69 1.92-1.35.24-.66.24-1.23.17-1.35-.07-.12-.26-.19-.55-.33-.29-.15-1.68-.83-1.94-.92-.26-.1-.45-.15-.64.14-.19.29-.73.92-.9 1.11-.16.2-.33.22-.61.08-.29-.15-1.21-.45-2.3-1.42-.85-.76-1.42-1.69-1.59-1.98-.16-.29-.01-.44.13-.59.13-.13.29-.34.43-.51.15-.17.19-.29.29-.48.1-.2.05-.37-.02-.51-.07-.15-.64-1.55-.88-2.12-.23-.55-.46-.48-.64-.49h-.54z"/></svg>',
   info: '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 7.6v.4"/></svg>',
   mais: '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>'
 };
@@ -123,8 +124,17 @@ function montarTopo() {
   gaveta.innerHTML = `
     ${linksMobile}
     <div class="rodape-menu">
-      <a class="btn btn-primario" data-zap="Olá! Quero me associar à AJS." href="contato.html">Associe-se à AJS ${ICO.seta}</a>
-      <p class="mono mt-m">${escapar(SITE.instagramArroba)}</p>
+      <a class="btn btn-primario" data-zap="Olá! Quero me associar à AJS." href="contato.html">
+        Associe-se à AJS ${ICO.seta}
+      </a>
+      <div class="contato-menu">
+        <a href="${escapar(SITE.instagram)}" target="_blank" rel="noopener">
+          ${ICO.instagram} ${escapar(SITE.instagramArroba)}
+        </a>
+        <a href="${linkZap("Olá! Vim pelo site da AJS.")}" target="_blank" rel="noopener">
+          ${ICO.whatsapp} ${escapar(SITE.whatsappVisivel || "WhatsApp")}
+        </a>
+      </div>
     </div>`;
 
   document.body.prepend(gaveta);
