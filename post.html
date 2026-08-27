@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Matéria | Blog da AJS</title>
+<meta name="description" content="Matéria do blog da Associação Juizforana de Skate.">
+<meta name="theme-color" content="#0B0B0D">
+<link rel="icon" href="assets/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body data-pagina="post">
+<div class="carregando" id="carregando" aria-hidden="true">
+  <img src="assets/logo.jpg" alt="">
+  <div class="pista"><span></span></div>
+</div>
+<a href="#conteudo" class="pular-para">Pular para o conteúdo</a>
+
+<main id="conteudo">
+
+  <header class="pagina-topo">
+    <div class="wrap wrap-estreito">
+      <nav class="migalhas" aria-label="Você está em">
+        <a href="index.html">Início</a> / <a href="blog.html">Blog</a> / <span>Matéria</span>
+      </nav>
+      <h1 id="post-titulo">Matéria</h1>
+      <div class="card-meta" id="post-meta" style="margin-top:22px;color:rgba(255,255,255,.6)"></div>
+    </div>
+  </header>
+
+  <section class="secao">
+    <div class="wrap wrap-estreito" id="post"></div>
+
+    <div class="wrap wrap-estreito mt-g">
+      <a class="btn btn-fantasma" href="blog.html">Voltar para o blog</a>
+    </div>
+  </section>
+
+  <section class="secao secao-creme-2">
+    <div class="wrap">
+      <div class="cabeca-secao">
+        <div>
+          <span class="kicker">Continue lendo</span>
+          <h2 class="titulo-secao">Outras matérias</h2>
+        </div>
+        <a class="btn btn-escuro" href="blog.html">Ver todas</a>
+      </div>
+      <div class="grade g-3" id="post-relacionados"></div>
+    </div>
+  </section>
+
+</main>
+
+<script src="dados/conteudo.js"></script>
+<script src="js/site.js"></script>
+</body>
+</html>

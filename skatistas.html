@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Skatistas | Associação Juizforana de Skate</title>
+<meta name="description" content="Os skatistas associados à AJS. Clique em um nome para ver a descrição, a trajetória e os vídeos de cada skatista de Juiz de Fora.">
+<meta name="theme-color" content="#0B0B0D">
+<link rel="icon" href="assets/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body data-pagina="skatistas">
+<div class="carregando" id="carregando" aria-hidden="true">
+  <img src="assets/logo.jpg" alt="">
+  <div class="pista"><span></span></div>
+</div>
+<a href="#conteudo" class="pular-para">Pular para o conteúdo</a>
+
+<main id="conteudo">
+
+  <header class="pagina-topo">
+    <div class="wrap">
+      <nav class="migalhas" aria-label="Você está em"><a href="index.html">Início</a> / <span>Skatistas</span></nav>
+      <h1>Skatistas<br>associados</h1>
+      <p class="lead">
+        Quem representa Juiz de Fora nas ruas e nas pistas. Clique em um skatista para
+        ver a foto, a descrição e os vídeos dele.
+      </p>
+    </div>
+  </header>
+
+  <section class="secao">
+    <div class="wrap">
+
+      <div class="cabeca-secao">
+        <div>
+          <span class="kicker"><span id="contador-skatistas">00</span> skatistas cadastrados</span>
+          <h2 class="titulo-secao">Escolha um nome</h2>
+        </div>
+      </div>
+
+
+      <div class="grade g-4" id="lista-skatistas"></div>
+    </div>
+  </section>
+
+  <section class="secao secao-creme-2">
+    <div class="wrap">
+      <div class="cabeca-secao">
+        <div>
+          <span class="kicker">Lista completa</span>
+          <h2 class="titulo-secao">Índice de skatistas</h2>
+          <p class="lead mt-s">A mesma lista em formato de índice, para achar rápido pelo nome.</p>
+        </div>
+      </div>
+      <div class="lista-nomes" id="indice-skatistas"></div>
+    </div>
+  </section>
+
+  <section class="secao" style="padding-top:0">
+    <div class="wrap">
+      <div class="cta reveal">
+        <span class="kicker">Anda de skate em Juiz de Fora?</span>
+        <h2 class="titulo-secao">Mande sua parte<br>para a gente</h2>
+        <p class="lead">
+          A AJS publica os vídeos dos skatistas da cidade. Envie seu nome, sua foto e o link
+          do seu vídeo que a gente coloca no ar.
+        </p>
+        <div class="hero-acoes">
+          <a class="btn btn-primario" data-zap="Olá! Quero mandar meu vídeo de skate para o site da AJS." href="contato.html">Enviar meu vídeo</a>
+          <a class="btn btn-fantasma" data-zap="Olá! Quero me associar à AJS." href="contato.html">Associe-se</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<script src="dados/conteudo.js"></script>
+<script src="js/site.js"></script>
+</body>
+</html>

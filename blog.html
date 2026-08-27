@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Blog | Associação Juizforana de Skate</title>
+<meta name="description" content="Notícias, história e cultura do skate em Juiz de Fora pela Associação Juizforana de Skate.">
+<meta name="theme-color" content="#0B0B0D">
+<link rel="icon" href="assets/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body data-pagina="blog">
+<div class="carregando" id="carregando" aria-hidden="true">
+  <img src="assets/logo.jpg" alt="">
+  <div class="pista"><span></span></div>
+</div>
+<a href="#conteudo" class="pular-para">Pular para o conteúdo</a>
+
+<main id="conteudo">
+
+  <header class="pagina-topo">
+    <div class="wrap">
+      <nav class="migalhas" aria-label="Você está em"><a href="index.html">Início</a> / <span>Blog</span></nav>
+      <h1>Blog<br>da AJS</h1>
+      <p class="lead">
+        Notícias da associação, cobertura dos eventos, história do skate e o que rola
+        na cena de Juiz de Fora.
+      </p>
+    </div>
+  </header>
+
+  <section class="secao">
+    <div class="wrap">
+      <div id="post-destaque"></div>
+
+      <div class="cabeca-secao" style="margin-top:clamp(44px,6vw,72px)">
+        <div>
+          <span class="kicker">Todas as matérias</span>
+          <h2 class="titulo-secao">Últimas publicações</h2>
+        </div>
+      </div>
+
+      <div class="filtros" id="filtros-categoria"></div>
+      <div class="grade g-3" id="lista-posts"></div>
+    </div>
+  </section>
+
+  <section class="secao" style="padding-top:0">
+    <div class="wrap">
+      <div class="cta reveal">
+        <span class="kicker">Tem uma pauta?</span>
+        <h2 class="titulo-secao">Conte pra gente<br>o que rolou</h2>
+        <p class="lead">
+          Aconteceu um evento, um rolê, uma novidade na pista do seu bairro? Manda pra AJS
+          que a gente publica aqui.
+        </p>
+        <div class="hero-acoes">
+          <a class="btn btn-primario" data-zap="Olá! Tenho uma pauta para o blog da AJS." href="contato.html">Enviar pauta</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<script src="dados/conteudo.js"></script>
+<script src="js/site.js"></script>
+</body>
+</html>

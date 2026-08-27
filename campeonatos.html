@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Campeonatos | Associação Juizforana de Skate</title>
+<meta name="description" content="Agenda de campeonatos, etapas do circuito juizforano, inscrições, categorias e resultados dos eventos organizados pela AJS.">
+<meta name="theme-color" content="#0B0B0D">
+<link rel="icon" href="assets/logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+<body data-pagina="campeonatos">
+<div class="carregando" id="carregando" aria-hidden="true">
+  <img src="assets/logo.jpg" alt="">
+  <div class="pista"><span></span></div>
+</div>
+<a href="#conteudo" class="pular-para">Pular para o conteúdo</a>
+
+<main id="conteudo">
+
+  <header class="pagina-topo">
+    <div class="wrap">
+      <nav class="migalhas" aria-label="Você está em"><a href="index.html">Início</a> / <span>Campeonatos</span></nav>
+      <h1>Campeonatos<br>e eventos</h1>
+      <p class="lead">
+        Organizar campeonatos, torneios e demonstrações de skate na cidade e região é uma das
+        finalidades da AJS, prevista no estatuto. Aqui ficam as datas, inscrições e resultados.
+      </p>
+    </div>
+  </header>
+
+  <section class="secao">
+    <div class="wrap">
+      <div class="cabeca-secao">
+        <div>
+          <span class="kicker">Agenda</span>
+          <h2 class="titulo-secao">Próximas etapas</h2>
+          <p class="lead mt-s">Fique de olho no prazo das inscrições e nas categorias de cada evento.</p>
+        </div>
+      </div>
+      <div class="grade" id="lista-proximos"></div>
+    </div>
+  </section>
+
+  <section class="secao secao-creme-2">
+    <div class="wrap">
+      <div class="cabeca-secao">
+        <div>
+          <span class="kicker">Como funciona</span>
+          <h2 class="titulo-secao">Participando<br>de um campeonato</h2>
+        </div>
+      </div>
+
+      <div class="grade g-3">
+        <article class="card reveal">
+          <div class="card-corpo">
+            <h3>1. Inscrição</h3>
+            <p>As inscrições abrem com antecedência e são divulgadas aqui e no Instagram da AJS.
+               Cada evento tem seu prazo, valor e formulário próprios.</p>
+          </div>
+        </article>
+        <article class="card reveal">
+          <div class="card-corpo">
+            <h3>2. Categorias</h3>
+            <p>Os campeonatos costumam ter categorias por nível e por idade, além da categoria
+               feminina, para que todo mundo consiga competir com quem está no mesmo momento.</p>
+          </div>
+        </article>
+        <article class="card reveal">
+          <div class="card-corpo">
+            <h3>3. No dia</h3>
+            <p>Chegue cedo para o credenciamento e o aquecimento. A ordem das baterias é sorteada
+               na hora e anunciada no som da pista.</p>
+          </div>
+        </article>
+      </div>
+
+      <p class="aviso mt-g reveal">
+        <strong>Premiação:</strong> conforme o Art. 41 do estatuto, a AJS pode promover torneios,
+        campeonatos ou assemelhados, premiando os concorrentes. A premiação de cada etapa é
+        informada junto com as inscrições.
+      </p>
+    </div>
+  </section>
+
+  <section class="secao">
+    <div class="wrap">
+      <div class="cabeca-secao">
+        <div>
+          <span class="kicker">Histórico</span>
+          <h2 class="titulo-secao">Edições anteriores</h2>
+          <p class="lead mt-s">Resultados e pódios das etapas já realizadas.</p>
+        </div>
+      </div>
+      <div class="grade" id="lista-realizados"></div>
+    </div>
+  </section>
+
+  <section class="secao" style="padding-top:0">
+    <div class="wrap">
+      <div class="cta reveal">
+        <span class="kicker">Apoie o circuito</span>
+        <h2 class="titulo-secao">Sua marca<br>na pista</h2>
+        <p class="lead">
+          A AJS estabelece parcerias com lojas, empresas e marcas de skate para viabilizar
+          os campeonatos da cidade. Fale com a gente sobre patrocínio e apoio.
+        </p>
+        <div class="hero-acoes">
+          <a class="btn btn-primario" data-zap="Olá! Quero apoiar / patrocinar os campeonatos da AJS." href="contato.html">Quero apoiar</a>
+          <a class="btn btn-fantasma" href="sobre.html">Conhecer a AJS</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<script src="dados/conteudo.js"></script>
+<script src="js/site.js"></script>
+</body>
+</html>
