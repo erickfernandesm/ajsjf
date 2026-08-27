@@ -91,10 +91,8 @@ function montarTopo() {
     `<a href="${i.href}"${i.href === atual ? ' class="ativo" aria-current="page"' : ""}>${i.txt}</a>`
   ).join("");
 
-  const linksMobile = MENU.map((i, n) =>
-    `<a href="${i.href}"${i.href === atual ? ' class="ativo"' : ""}>
-       <span class="num">${String(n + 1).padStart(2, "0")}</span>${i.txt}
-     </a>`
+  const linksMobile = MENU.map(i =>
+    `<a href="${i.href}"${i.href === atual ? ' class="ativo"' : ""}>${i.txt}</a>`
   ).join("");
 
   const topo = document.createElement("header");

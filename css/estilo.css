@@ -370,15 +370,7 @@ body.menu-aberto { overflow: hidden; }
   align-items: baseline;
   gap: 16px;
 }
-.menu-mobile > a .num {
-  font-size: .72rem;
-  font-weight: 500;
-  font-family: var(--fonte-corpo);
-  letter-spacing: 0;
-  color: rgba(255,255,255,.35);
-}
 .menu-mobile > a.ativo { color: var(--coral); }
-.menu-mobile > a.ativo .num { color: var(--coral); }
 
 .menu-mobile .rodape-menu {
   margin-top: auto;
@@ -1180,6 +1172,9 @@ a.card:hover .play { transform: scale(1.12); }
   .nav { display: none; }
   .topo-acoes .btn { display: none; }
   .hamburguer { display: flex; }
+  .marca-txt { display: none; }          /* topo do mobile: só a logo */
+  .topo-interno { height: 68px; }
+  .marca img { width: 42px; height: 42px; }
   .g-3, .g-4 { grid-template-columns: repeat(2, 1fr); }
   .bloco-dividido { grid-template-columns: 1fr; }
   .post-destaque { grid-template-columns: 1fr; }
